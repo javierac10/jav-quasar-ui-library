@@ -1,5 +1,5 @@
 <template>
-    <QBtn :label="label" color="primary"></QBtn>
+    <QBtn color="primary" :label="label"></QBtn>
 </template>
 
 <script>

@@ -2,19 +2,19 @@
     <div class="q-pa-md">
       <q-btn-dropdown color="primary" label="Dropdown Button">
         <q-list>
-          <q-item clickable v-close-popup @click="onItemClick">
+          <q-item clickable @click="onItemClick">
             <q-item-section>
               <q-item-label>Photos</q-item-label>
             </q-item-section>
           </q-item>
   
-          <q-item clickable v-close-popup @click="onItemClick">
+          <q-item clickable @click="onItemClick">
             <q-item-section>
               <q-item-label>Videos</q-item-label>
             </q-item-section>
           </q-item>
   
-          <q-item clickable v-close-popup @click="onItemClick">
+          <q-item clickable @click="onItemClick">
             <q-item-section>
               <q-item-label>Articles</q-item-label>
             </q-item-section>
@@ -27,12 +27,17 @@
 import { QList, QItem, QItemLabel, QItemSection, QBtnDropdown } from 'quasar'
 export default {
     name: 'MyQuasarTwoButton',
-    // props: {
-    //     label: {
-    //         type: String,
-    //         required: true,
-    //     }
-    // },
+    props: {
+        color: {
+            type: String,
+            required: false
+        }
+    },
+    methods: {
+        onItemClick(event) {
+            console.log('event', event.value)
+        }
+    },
     components: {
         QList, QItem, QItemLabel, QItemSection, QBtnDropdown
     }
@@ -40,7 +45,7 @@ export default {
 </script>
 <!-- </script> -->
   <!-- <script setup>
-
+clickable v-close-popup
     const onItemClick = () => {
         console.log('Clicked on an Item')
       }

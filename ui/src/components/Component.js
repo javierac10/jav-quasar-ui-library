@@ -7,7 +7,8 @@ export default {
   setup () {
     return () => h(QBadge, {
       class: 'LibraryComponent',
-      label: 'badge'
+      label: 'badge',
+      color: 'primary'
     })
   }
 }

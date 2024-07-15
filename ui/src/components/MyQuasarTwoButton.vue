@@ -1,5 +1,5 @@
 <template>
-    <q-btn :label="label" color="secondary"></q-btn>
+    <q-btn color="primary" :label="label"></q-btn>
 </template>
 <script>
 import { QBtn } from 'quasar'
