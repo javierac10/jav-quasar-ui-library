@@ -3,7 +3,7 @@ import MyQuasarTwoButton from './components/MyQuasarTwoButton.vue'
 import Component from './components/Component'
 import MyQuasarDropDown from './components/MyQuasarDropDown.vue'
 import { setCssVar } from 'quasar'
-const version = __UI_VERSION__
+// const version = __UI_VERSION__
 
 function install (app, options) {
 
@@ -18,7 +18,7 @@ function install (app, options) {
 }
 
 export {
-  version,
+  // version,
   // MyQuasarButton,
   // MyQuasarTwoButton,
   // Component,

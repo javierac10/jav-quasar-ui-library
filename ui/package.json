@@ -1,28 +1,24 @@
 {
   "name": "quasar-ui-ui-test",
   "version": "0.0.2",
-  "author": "Javier Araujo <javier.araujo.cuadros@gmail.com>",
   "description": "ui quasar test library",
-  "license": "MIT",
-  "module": "dist/index.esm.js",
-  "main": "dist/index.common.js",
+  "author": "Javier Araujo <javier.araujo.cuadros@gmail.com>",
   "scripts": {
+    "build": "node build/index.js",
+    "build:css": "node build/script.css.js",
+    "build:js": "node build/script.javascript.js",
     "dev": "cd dev && yarn dev && cd ..",
-    "dev:umd": "yarn build && node build/script.open-umd.js",
-    "dev:ssr": "cd dev && yarn 'dev:ssr' && cd ..",
-    "dev:ios": "cd dev && yarn 'dev:ios' && cd ..",
     "dev:android": "cd dev && yarn 'dev:android' && cd ..",
     "dev:electron": "cd dev && yarn 'dev:electron' && cd ..",
-    "build": "node build/index.js",
-    "build:js": "node build/script.javascript.js",
-    "build:css": "node build/script.css.js"
+    "dev:ios": "cd dev && yarn 'dev:ios' && cd ..",
+    "dev:ssr": "cd dev && yarn 'dev:ssr' && cd ..",
+    "dev:umd": "yarn build && node build/script.open-umd.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/javierac10/jav-quasar-ui-library"
+  "main": "dist/index.common.js",
+  "module": "dist/index.esm.js",
+  "dependencies": {
+    "vue-class-component": "^8.0.0-0"
   },
-  "bugs": "",
-  "homepage": "",
   "devDependencies": {
     "@quasar/app-webpack": "^3.13.0",
     "@quasar/extras": "^1.16.4",
@@ -31,6 +27,8 @@
     "@rollup/plugin-json": "^4.0.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-replace": "^2.4.2",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "^5.0.8",
     "autoprefixer": "^10.0.2",
     "chalk": "^4.1.0",
     "core-js": "^3.0.0",
@@ -44,6 +42,7 @@
     "rollup-plugin-vue": "^6.0.0",
     "rtlcss": "^2.6.1",
     "sass": "^1.33.0",
+    "typescript": "~4.5.5",
     "uglify-js": "^3.13.3",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0",
@@ -59,5 +58,12 @@
     "last 4 ChromeAndroid versions",
     "last 4 FirefoxAndroid versions",
     "last 4 iOS versions"
-  ]
+  ],
+  "bugs": "",
+  "homepage": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/javierac10/jav-quasar-ui-library"
+  }
 }
