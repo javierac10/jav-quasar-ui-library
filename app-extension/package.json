@@ -1,6 +1,6 @@
 {
   "name": "quasar-app-extension-ui-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Quasar App Extension",
   "author": "Javier Araujo <javier.araujo.cuadros@gmail.com>",
   "license": "MIT",
@@ -12,7 +12,7 @@
   "bugs": "",
   "homepage": "",
   "dependencies": {
-    "quasar-ui-ui-test": "^0.0.1"
+    "quasar-ui-ui-test": "^0.0.2"
   },
   "engines": {
     "node": ">= 8.9.0",
