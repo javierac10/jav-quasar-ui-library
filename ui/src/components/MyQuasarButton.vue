@@ -1,9 +1,6 @@
-<template>
-    <QBtn color="primary" :label="label"></QBtn>
-</template>
-
-<script>
+<script lang="ts">
 import { QBtn } from 'quasar'
+
 export default {
     name: 'MyQuasarButton',
     props: {
@@ -17,3 +14,6 @@ export default {
     }
 };
 </script>
+<template>
+    <QBtn color="primary" :label="label"></QBtn>
+</template>
